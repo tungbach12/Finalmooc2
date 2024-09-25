@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+
+}
+
+nav {
+    display: flex;
+    background-color: mediumturquoise;
+    justify-content: space-between;
+    height: 80px;
+    flex-wrap: wrap;
+}
+
+nav h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 15px 40px;
+    margin-left: 1%;
+    background-color: rgb(68, 157, 157);
+    border-radius: 30px;
+
+}
+
+nav ul {
+    background-color: mediumturquoise;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+a:hover {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 20px;
+}
+a:focus {
+    background-color: aliceblue;
+    color: black;
+    border-radius: 20px;
+}
+nav ul li a {
+    display: block;
+    margin-right: 40px;
+    padding: 22px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    transition-duration: 0.5s;
+    border-radius: 20px;
+
+}
+
+.current {
+    background-color: rgb(61, 227, 221);
+}
+
+.heading {
+    background-color: rgb(234, 208, 176);
+    height: 70px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.heading h1 {
+    width: 200px;
+    text-align: center;
+    background-color: rgb(66, 205, 205);
+    border-radius: 20px;
+    margin:0  auto;
+    margin-top: 0px;
+
+}
+.introduction h3 {
+    text-align: center;
+}
+
+.introduction img {
+    display: block;
+    margin: 0 auto;
+}
+
+#frieren {
+    background-color: antiquewhite;
+}
+
+.imageContainerFrieren {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5%;
+
+}
+
+.imageContainerFrieren img {
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 20px;
+    border: 5px solid rgb(199, 132, 125);
+    transition-duration: 0.5s;
+}
+
+.imageContainerFrieren :nth-child(2n) {
+    border: 5px solid rgb(82, 148, 209);
+}
+.imageContainerFrieren :hover {
+   transform: rotate(5deg);
+}
+/*  */
+#Natsume {
+    background-color: antiquewhite;
+}
+.imageContainerNatsume {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5%;
+    
+}
+
+.imageContainerNatsume img {
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 20px;
+    border: 5px solid rgb(199, 132, 125);
+    transition-duration: 0.5s;
+}
+
+.imageContainerNatsume :nth-child(2n) {
+    border: 5px solid rgb(82, 148, 209);
+}
+.imageContainerNatsume :hover {
+    width: 55%;
+}
+/*  */
+.introduction p {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.go {
+    position: absolute;
+    left: -10000px;
+   
+}
+.go:focus {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: mediumturquoise;
+    left: 0;
+}
+@media (max-width: 720px) {
+    nav ul li a {
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 600px) {
+    nav ul li a {
+        margin: 0;
+
+    }
+
+    nav ul li {
+        margin-top: 10px;
+    }
+
+    nav {
+        justify-content: center;
+        height: 190px;
+    }
+
+    nav ul {
+        flex-grow: 1;
+    }
+
+}
